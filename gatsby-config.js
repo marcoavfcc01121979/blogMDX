@@ -37,6 +37,29 @@ module.exports = {
       options: {
         fonts: [
           {
+            family: `Rubik`,
+            variants: [`300`]
+          },
+          {
+            family: `Roboto`,
+            variants: [`700`, `900`]
+          },
+          {
+            family: `Roboto Slab`,
+            variants: [`300`]
+          },
+          {
+            family: `Roboto Condensed`,
+            variants: [`700`]
+          },
+        ],
+      },
+    }
+    /*{
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
             family: `Roboto`,
             variants: [`400`, `500`, `700`],
           },
@@ -45,6 +68,6 @@ module.exports = {
           },
         ],
       },
-    },
+    },*/
   ],
 }
