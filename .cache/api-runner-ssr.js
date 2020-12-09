@@ -8,8 +8,8 @@ var plugins = [{
       plugin: require('/home/marcoavfcc/blogMDX/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"transpileTemplateLiterals":true,"pure":false},
     },{
-      plugin: require('/home/marcoavfcc/blogMDX/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
-      options: {"plugins":[],"fonts":[{"family":"Rubik","variants":["300"]},{"family":"Roboto","variants":["700","900"]},{"family":"Roboto Slab","variants":["300"]},{"family":"Roboto Condensed","variants":["700"]}]},
+      plugin: require('/home/marcoavfcc/blogMDX/node_modules/gatsby-plugin-google-fonts-v2/gatsby-ssr'),
+      options: {"plugins":[],"fonts":[{"family":"Roboto Slab","variable":true,"weights":["200..900"]}]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
