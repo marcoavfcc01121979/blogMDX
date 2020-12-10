@@ -1,5 +1,6 @@
 import { Link } from 'gatsby'
 import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton } from '../components/Complete'
 
 <section className="mdx-page">
 ## my first mdx file
@@ -44,5 +45,33 @@ como o Aldus PageMaker que incluem versões do Lorem Ipsum._
   dolor sit amet..." aparece de uma linha na secção 1.10.32.
 
 </div>
+
+<h2>React Components</h2>
+<Counter />
+
+```jsx
+import React from "react"
+import styled from "styled-components"
+import { AiOutlineLike } from "react-icons/ai"
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+<LikeButton />
 
 </section>
