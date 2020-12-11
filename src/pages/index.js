@@ -6,10 +6,11 @@ import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
 // ...GatsbyImageSharpFluid
 const IndexPage = ({data}) => {
-  console.log(data);
+  const {allMdx: {nodes: posts}} = data;
   
   return <Layout>
     <Hero showPerson />
+    <Posts posts={posts} title='recently published' />
   </Layout>
 }
 
